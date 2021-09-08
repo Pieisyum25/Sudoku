@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Number.gd" type="Script" id=1]
+[ext_resource path="res://Misc/good times rg.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Number" type="Label"]
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 64, 64 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 1, 0, 1 )
+align = 1
+valign = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
